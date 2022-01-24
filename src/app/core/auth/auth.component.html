@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="auth-card card-shadow">
+        <div class="align-center">
+          <img
+            src="../assets/img/select_conseil_logo.png"
+            width="60px"
+            alt="SELECT CONSEIL LOGO"
+          />
+        </div>
+        <h5 class="align-center py-3">Connectez-vous à votre espace</h5>
+        <form class="form" (ngSubmit)="onLogin()">
+          <div class="form-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input
+              type="email"
+              class="form-control"
+              id="username"
+              placeholder="email@domain.com"
+            />
+            <!-- <div>Error Message here</div> -->
+          </div>
+          <div class="form-group">
+            <br />
+            <label for="username">Mot de passe</label>
+            <input
+              type="password"
+              class="form-control"
+              id="mdp"
+              placeholder="Saisir votre mot de passe ..."
+            />
+            <!-- <div>Error Message here</div> -->
+          </div>
+          <br />
+
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn my-primary-butt" type="submit">
+              Se connecter <i class="bx bx-log-in"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

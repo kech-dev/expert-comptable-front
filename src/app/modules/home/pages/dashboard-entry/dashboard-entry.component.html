@@ -1,0 +1,45 @@
+<div class="wrapper">
+  <div
+    class="sidebar {{isOpenVar}}"
+    data-color="danger"
+    data-background-color="white"
+    data-image="./assets/img/sidebar-1.jpg"
+  >
+    <div class="toggle primary_back_color" (click)="isOpen()">
+      <i class="bx bx-chevron-right"></i>
+    </div>
+    <div class="logo align-center py-3 primary_color">
+      <img
+        src="../../../assets/img/select_conseil_logo.png"
+        width="65px"
+        alt="Select Conseil"
+      />
+      <!-- <span class="text"> Select Conseil</span> -->
+
+    </div>
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+        <li
+          routerLinkActive="active"
+          *ngFor="let menuItem of menuItems"
+          class="{{ menuItem.class }} nav-item"
+        >
+          <a class="nav-link" [routerLink]="[menuItem.path]" title="{{menuItem.title}}">
+            <i class="bx bx{{ menuItem.icon }} bx-sm "></i>
+            <p class="text">{{ menuItem.title }}</p>
+          </a>
+        </li>
+        <li routerLinkActive="active" (click)="onLogout()" class="nav-item">
+          <a href="#" class="nav-link" title="Se déconnecter">
+            <i class="bx bx-log-out bx-sm"></i>
+            <p class="text">Se déconnecter</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-panel">
+    <!-- <app-my-table></app-my-table> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

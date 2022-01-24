@@ -1,0 +1,5 @@
+.username .name {
+  font-weight: 500;
+  /* font-size: smaller; */
+  vertical-align: super;
+}

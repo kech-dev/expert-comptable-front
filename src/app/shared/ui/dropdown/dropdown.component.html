@@ -1,0 +1,35 @@
+<span class="dropdown">
+  <i
+    class="bx {{ icon }} bx-sm px-3 icony"
+    [matBadge]="total_badge_number"
+    matBadgeColor="warn"
+    matBadgeSize="small"
+    id="dropdownMenuButton{{ id_dropdown }}"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+    data-bs-auto-close="false"
+  ></i>
+  <ul
+    class="dropdown-menu my-shadow pull-right"
+    *ngIf="type_dropdown === 'settings'"
+  >
+    <li *ngFor="let item of items">
+      <a class="dropdown-item" href="#">{{ item }}</a>
+    </li>
+  </ul>
+  <div
+    class="dropdown-menu my-shadow pull-right"
+    [ngStyle]="{ width: width_dropDown }"
+    *ngIf="type_dropdown === 'notifications'"
+  >
+    <div
+      *ngFor="let item of items"
+      class="alert alert-warning d-flex align-items-center the_alert "
+      role="alert"
+    >
+        <i class="bx bx-alarm-exclamation bx-sm pr-4"></i> An example warning alert with an
+        icon {{ item }}
+
+    </div>
+  </div>
+</span>

@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("assets/img/back-login.svg"),
+    linear-gradient(180deg, #f6f6f6, #fff);
+  background-size: cover, auto;
+  color: #333;
+  font-weight: 500;
+}

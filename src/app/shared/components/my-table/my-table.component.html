@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="toolbar">
+        <div class="align-center primary_color">
+          <h4>
+            Titre de la liste here .
+          </h4>
+        </div>
+      </div>
+      <div class="my-shadow">
+        <table
+          mat-table
+          [dataSource]="dataSource"
+          matSort
+          (matSortChange)="announceSortChange($event)"
+        >
+          <ng-container *ngFor="let item of data_element " matColumnDef="{{item._cellColDef}}">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>{{item._cellHeader}}</th>
+            <td mat-cell *matCellDef="let element">{{ element[item._cellRow] }}</td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+        <mat-paginator
+          [pageSizeOptions]="[5, 10, 20]"
+          showFirstLastButtons
+          pageSize="10"
+        >
+        </mat-paginator>
+      </div>
+    </div>
+  </div>
+</div>

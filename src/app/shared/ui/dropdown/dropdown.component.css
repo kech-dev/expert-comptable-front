@@ -1,0 +1,32 @@
+.dropdown-menu[data-bs-popper] {
+  top: 143%;
+  border: 0;
+  border-radius: 0;
+  /* left: -121px; */
+  margin-top: 0.125rem;
+}
+.icony {
+  cursor: pointer;
+  /*  */
+}
+.icony:hover,
+.icony:active {
+  color: #950101;
+}
+.px-3 {
+  padding-right: 0!important;
+  padding-left: 1rem!important;
+}
+.pull-right {
+  right: 0;
+  left: auto;
+}
+.the_alert {
+  margin: 10px 15px;
+  padding: 12px;
+  font-size: 12px;
+  /* color: black; */
+}
+.pr4{
+  padding-right: 5px;
+}

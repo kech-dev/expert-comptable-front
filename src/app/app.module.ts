@@ -10,9 +10,10 @@ import { MaterialModule } from './shared/material/material.module';
 import { AuthComponent } from './core/auth/auth.component';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './modules/home/home.module';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
-  declarations: [AppComponent,AuthComponent],
+  declarations: [AppComponent, AuthComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,6 +25,12 @@ import { HomeModule } from './modules/home/home.module';
     MaterialModule,
     SharedModule,
     HomeModule,
+    ToastrModule.forRoot({
+      timeOut: 80000,
+      positionClass: 'toast-top-right',
+      closeButton: true,
+      easing: 'ease-in',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

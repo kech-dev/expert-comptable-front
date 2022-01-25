@@ -8,7 +8,7 @@ import { MyTableComponent } from './components/my-table/my-table.component';
 
 @NgModule({
   imports: [CommonModule,MaterialModule],
-  declarations: [DropdownComponent,MyTableComponent],
-  exports: [DropdownComponent,MyTableComponent],
+  declarations: [DropdownComponent,MyTableComponent, ],
+  exports: [DropdownComponent,MyTableComponent,],
 })
 export class SharedModule { }

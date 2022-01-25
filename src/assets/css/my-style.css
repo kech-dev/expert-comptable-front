@@ -211,7 +211,7 @@ footer.footer {
   line-height: 30px;
   width: 30px;
   text-align: center;
-  color: #a9afbb;
+  /* color: #a9afbb; */
 }
 .sidebar .nav li a,
 .sidebar .nav li .dropdown-menu a {

@@ -5,8 +5,9 @@
   transform: translateY(-50%) rotate(180deg);
   height: 30px;
   width: 30px;
-  /* background-color: brown; */
-  color: white;
+  background-color:  #eee;
+  color: brown;
+  border :2px solid brown;
   border-radius: 50%;
   display: flex;
   align-items: center;

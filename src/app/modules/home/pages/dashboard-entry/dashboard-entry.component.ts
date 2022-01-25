@@ -15,28 +15,28 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: 'companies',
-    title: 'Liste de Sociétés',
+    title: 'Les sociétés',
     icon: '-blanket',
     class: '',
   },
   {
     path: 'clients',
-    title: 'Liste de Clients',
+    title: 'Les clients',
     icon: '-user',
     class: '',
-  },  {
+  },
+  {
     path: '/notifications',
-    title: 'Notifications',
+    title: 'Les notifications',
     icon: '-bell',
     class: '',
   },
   {
     path: 'users',
-    title: "Liste d'Utilisateurs",
+    title: 'Les utilisateurs',
     icon: '-user-circle',
     class: '',
   },
-
 ];
 @Component({
   templateUrl: './dashboard-entry.component.html',
@@ -55,7 +55,7 @@ export class DashboardEntryComponent implements OnInit {
     this.menuItems = ROUTES.filter((menuItem) => menuItem);
   }
 
-  isOpenVar = 'close';
+  isOpenVar = 'open';
   isOpen = () => {
     if (this.isOpenVar === 'close') {
       this.isOpenVar = 'open';
@@ -63,5 +63,4 @@ export class DashboardEntryComponent implements OnInit {
       this.isOpenVar = 'close';
     }
   };
-
 }

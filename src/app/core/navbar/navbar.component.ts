@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   constructor(private toastrService: ToastrService) {}
 
   ngOnInit(): void {
-    this.showSuccess();
+    // this.showSuccess();
 
   }
   showSuccess() {

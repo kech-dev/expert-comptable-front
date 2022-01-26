@@ -7,8 +7,8 @@
     id="dropdownMenuButton{{ id_dropdown }}"
     data-bs-toggle="dropdown"
     aria-expanded="false"
-    data-bs-auto-close="false"
   ></i>
+  <!-- data-bs-auto-close='false' -->
   <ul
     class="dropdown-menu my-shadow pull-right"
     *ngIf="type_dropdown === 'settings'"
@@ -24,12 +24,11 @@
   >
     <div
       *ngFor="let item of items"
-      class="alert alert-warning d-flex align-items-center the_alert "
+      class="alert alert-warning d-flex align-items-center the_alert"
       role="alert"
     >
-        <i class="bx bx-alarm-exclamation bx-sm pr-4"></i> An example warning alert with an
-        icon {{ item }}
-
+      <i class="bx bx-alarm-exclamation bx-sm pr-4"></i> An example warning
+      alert with an icon {{ item }}
     </div>
   </div>
 </span>

@@ -1,22 +1,9 @@
 <mat-tab-group mat-stretch-tabs mat-align-tabs="center">
-  <mat-tab>
+  <mat-tab *ngFor="let item of tabs">
     <ng-template mat-tab-label>
-      <div class="icon-tab"><i class="bx bx-user-pin bx-sm"></i></div>
-      <div class="title-tab">Première Étape</div>
+      <div class="icon-tab"><i class="bx {{item.icon_tab}} bx-sm"></i></div>
+      <div class="title-tab">{{item.title_tab}}</div>
     </ng-template>
-    <app-my-stepper></app-my-stepper>
+   {{item.content_tab}}
   </mat-tab>
-  <mat-tab>
-    <ng-template mat-tab-label>
-      <div class="icon-tab"><i class="bx bx-file bx-sm"></i></div>
-      <div class="title-tab">Deuxième Étape</div>
-    </ng-template>
-    Content 2</mat-tab
-  >
-  <mat-tab label="Third">
-    <ng-template mat-tab-label>
-      <div class="icon-tab"><i class="bx bx-upload bx-sm"></i></div>
-      <div class="title-tab">Troisième Étape</div>
-    </ng-template>
-    Content 3</mat-tab>
 </mat-tab-group>

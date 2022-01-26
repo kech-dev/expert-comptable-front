@@ -1,0 +1,34 @@
+
+.file-input {
+  display: none;
+}
+.file-upload-progress{
+padding: 10px;
+}
+.file-upload{
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+.file-upload .file-upload-title{
+  font-size: 14px;
+    padding: 5px 10px;
+}
+.file-upload .file-upload-input{
+  font-size: 15px;
+  padding: 5px 10px;
+  display: flex;
+}
+.file-upload-input .upload-event{
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}

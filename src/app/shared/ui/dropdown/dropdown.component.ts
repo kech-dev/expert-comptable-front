@@ -12,6 +12,7 @@ export class DropdownComponent implements OnInit {
   @Input() total_badge_number!: string;
   @Input() width_dropDown!: any;
   @Input() type_dropdown!: any;
+  @Input() auto_close!: any;
   constructor() {}
 
   ngOnInit(): void {}

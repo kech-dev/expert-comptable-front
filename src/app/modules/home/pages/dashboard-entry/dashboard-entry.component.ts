@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 declare interface RouteInfo {
   path: string;
   title: string;
@@ -63,4 +64,6 @@ export class DashboardEntryComponent implements OnInit {
       this.isOpenVar = 'close';
     }
   };
+  type_soc: any;
+  companies_types=['SARL','SAS','Autre']
 }

@@ -5,6 +5,7 @@ import { ClientsComponent } from './components/clients/clients.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { UsersComponent } from './components/users/users.component';
 import { DashboardEntryComponent } from './pages/dashboard-entry/dashboard-entry.component';
+import { QAndAComponent } from './pages/q-and-a/q-and-a.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
       {path:'users',component:UsersComponent}
     ]
   },
+  {
+    path: 'QandA',
+    component:QAndAComponent
+  }
 
 ];
 

@@ -1,13 +1,13 @@
-.sidebar  .toggle{
+.sidebar .toggle {
   position: absolute;
   top: 46px;
   right: -15px;
   transform: translateY(-50%) rotate(180deg);
   height: 30px;
   width: 30px;
-  background-color:  #eee;
+  background-color: #eee;
   color: brown;
-  border :2px solid brown;
+  border: 2px solid brown;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -17,23 +17,37 @@
   transition: 0.4s all ease;
 }
 
-.sidebar.close ~ .main-panel{
+.sidebar.close ~ .main-panel {
   /* left: 78px; */
   height: 100vh;
   width: calc(100% - 93px);
 }
-.sidebar.close{
+.sidebar.close {
   width: 88px;
 }
-.sidebar .text,.text{
+.sidebar .text,
+.text {
   opacity: 1;
 }
-.sidebar.close .text,.text{
+.sidebar.close .text,
+.text {
   opacity: 0;
 }
-.sidebar.close .toggle{
+.sidebar.close .toggle {
   transform: translateY(-50%) rotate(0deg);
 }
-.nav-link{
-  cursor:pointer;
+.nav-link {
+  cursor: pointer;
+}
+.mat-radio-button {
+  font-size: 14px;
+  padding: 3px 10px;
+  font-weight: 600;
+  color: #3c4858;
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+.radio-button-label {
+  padding: 15px 5px;
 }

@@ -4,7 +4,7 @@
     data-color="danger"
     data-background-color="white"
   >
-    <div class="toggle  my-shadow" (click)="isOpen()">
+    <div class="toggle my-shadow" (click)="isOpen()">
       <i class="bx bx-chevron-right"></i>
     </div>
     <div class="logo align-center py-3 primary_color">
@@ -31,11 +31,11 @@
             <p class="text">{{ menuItem.title }}</p>
           </a>
         </li>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <li routerLinkActive="active" (click)="onLogout()" class="nav-item">
           <a class="nav-link" title="Se déconnecter">
             <i class="bx bx-log-out"></i>
@@ -51,8 +51,33 @@
         <div class="col-md-12">
           <!-- <app-my-stepper></app-my-stepper> -->
           <!-- <app-my-table></app-my-table> -->
-          <app-my-tab></app-my-tab>
+          <!-- <app-my-tab ></app-my-tab> -->
           <!-- <router-outlet></router-outlet> -->
+          <!-- <app-my-file-upload></app-my-file-upload> -->
+          <div class="radio-button">
+            <label class="radio-button-label"
+              >Sélectionnez le type de société :</label
+            >
+            <br />
+            <mat-radio-group
+              aria-label="Sélectionnez le type de société"
+              [(ngModel)]="type_soc"
+            >
+              <mat-radio-button
+                *ngFor="let ct of companies_types"
+                [value]="ct"
+                >{{ ct }}</mat-radio-button
+              >
+            </mat-radio-group>
+            <div class="autre" *ngIf="type_soc === 'Autre'">
+              <label>Type de societe :</label>
+              <input
+                type="text"
+                class="form-control form-control1"
+                placeholder="Type de societe"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

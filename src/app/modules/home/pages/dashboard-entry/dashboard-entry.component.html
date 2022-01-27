@@ -1,5 +1,7 @@
 <div class="wrapper">
   <div
+    (mouseenter) ="openSideBar()"
+    (mouseleave)="closeSideBar()"
     class="sidebar {{ isOpenVar }}"
     data-color="danger"
     data-background-color="white"
@@ -54,8 +56,8 @@
           <!-- <app-my-table></app-my-table> -->
           <app-my-tab ></app-my-tab>
           <!-- <router-outlet></router-outlet> -->
-          <!-- <app-my-file-upload></app-my-file-upload> -->
-          <!-- <div class="radio-button">
+          <app-my-file-upload></app-my-file-upload>
+          <div class="radio-button">
             <label class="radio-button-label"
               >Sélectionnez le type de société :</label
             >
@@ -78,7 +80,7 @@
                 placeholder="Type de societe"
               />
             </div>
-          </div> -->
+          </div>
           <!-- <app-badge badge_icon="check-square" badge_title="C'est Complet" badge_type="success"> </app-badge> -->
         </div>
       </div>

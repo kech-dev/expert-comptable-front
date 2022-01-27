@@ -1,12 +1,14 @@
 <div class="wrapper">
   <div
+    (mouseenter) ="openSideBar()"
+    (mouseleave)="closeSideBar()"
     class="sidebar {{ isOpenVar }}"
     data-color="danger"
     data-background-color="white"
   >
-    <div class="toggle my-shadow" (click)="isOpen()">
+    <!--<div class="toggle my-shadow" (click)="isOpen()">
       <i class="bx bx-chevron-right"></i>
-    </div>
+    </div>-->
     <div class="logo align-center py-3 primary_color">
       <img
         src="../../../assets/img/select_conseil_logo.png"
@@ -53,7 +55,7 @@
           <!-- <app-my-table></app-my-table> -->
           <!-- <app-my-tab ></app-my-tab> -->
           <!-- <router-outlet></router-outlet> -->
-          <!-- <app-my-file-upload></app-my-file-upload> -->
+          <app-my-file-upload></app-my-file-upload>
           <div class="radio-button">
             <label class="radio-button-label"
               >Sélectionnez le type de société :</label

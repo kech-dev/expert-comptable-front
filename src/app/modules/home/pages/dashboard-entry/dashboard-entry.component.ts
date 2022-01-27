@@ -56,7 +56,7 @@ export class DashboardEntryComponent implements OnInit {
     this.menuItems = ROUTES.filter((menuItem) => menuItem);
   }
 
-  isOpenVar = 'open';
+  isOpenVar = 'close';
   isOpen = () => {
     if (this.isOpenVar === 'close') {
       this.isOpenVar = 'open';
@@ -66,4 +66,10 @@ export class DashboardEntryComponent implements OnInit {
   };
   type_soc: any;
   companies_types=['SARL','SAS','Autre']
+  closeSideBar(){
+    this.isOpenVar='close';
+  }
+  openSideBar(){
+    this.isOpenVar='open';
+  }
 }

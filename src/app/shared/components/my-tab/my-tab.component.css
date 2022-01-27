@@ -1,7 +1,14 @@
-::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-content{
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-content {
   display: block !important;
   font-size: 12px;
-  font-weight: 700;
-  }
-  
-  
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+::ng-deep .mat-tab-label {
+  height: 60px !important;
+}
+.mat-tab-group{
+  background: white;
+    padding: 10px 0px;
+    border-radius: 3px;
+}

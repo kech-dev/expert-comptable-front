@@ -1,9 +1,9 @@
 <mat-tab-group mat-stretch-tabs mat-align-tabs="center">
-  <mat-tab *ngFor="let item of tabs">
-    <ng-template mat-tab-label>
-      <div class="icon-tab"><i class="bx {{item.icon_tab}} bx-sm"></i></div>
-      <div class="title-tab">{{item.title_tab}}</div>
+  <mat-tab *ngFor="let tab of tabs" [disabled]="tab.isDisabled">
+    <ng-template mat-tab-label >
+      <div class="icon-tab"><i class="bx {{tab.icon_tab}} bx-mi"></i></div>
+      <div class="title-tab">{{tab.title_tab}}</div>
     </ng-template>
-   {{item.content_tab}}
+   {{tab.content_tab}}
   </mat-tab>
 </mat-tab-group>

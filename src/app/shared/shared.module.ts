@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyTabComponent } from './components/my-tab/my-tab.component';
 import { DialogComponent } from './ui/dialog/dialog.component';
 import { MyFileUploadComponent } from './components/my-file-upload/my-file-upload.component';
+import { BadgeComponent } from './ui/badge/badge.component';
 
 const COMPONENTS_SHARED = [
   DropdownComponent,
@@ -15,7 +16,8 @@ const COMPONENTS_SHARED = [
   MyStepperComponent,
   MyTabComponent,
   DialogComponent,
-  MyFileUploadComponent
+  MyFileUploadComponent,
+  BadgeComponent
 ];
 @NgModule({
   imports: [CommonModule, MaterialModule, FormsModule, ReactiveFormsModule],

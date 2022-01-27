@@ -1,20 +1,6 @@
-.tim-typo {
-  padding-left: 25%;
-  margin-bottom: 40px;
-  position: relative;
-  width: 100%;
-}
-.tim-typo .tim-note {
-  bottom: 5px;
-  color: #c0c1c2;
-  display: block;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 15px;
-  left: 0;
-  margin-left: 20px;
-  position: absolute;
-  width: 260px;
+/* var primary_color:#950101 */
+:root {
+  --main-bg-color: #950101;
 }
 .card-shadow,
 .my-shadow {
@@ -38,10 +24,10 @@
   background-color: white;
 }
 .primary_back_color {
-  background-color: #950101;
+  background-color: var(--main-bg-color);
 }
 .primary_color {
-  color: #950101;
+  color: var(--main-bg-color);
 }
 .form-control {
   padding: 15px 13px;
@@ -82,15 +68,29 @@
   border-radius: 0px;
   color: white;
   cursor: pointer;
-  background-color: #950101;
+  background-color: var(--main-bg-color);
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   transition: background-color 100ms ease;
 }
 .my-primary-butt:hover {
-  background-color: #ae0000;
+  background-color: var(--main-bg-color);
   color: white;
 }
+.my-button {
+  background-color: var(--main-bg-color);
+  color: white;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: var(--main-bg-color);
+}
+.mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: var(--main-bg-color);
+  color: white;
+}
+
 .my-primary-butt:focus {
   box-shadow: 0px 0px 0 2px rgb(149 1 1);
   border: 3px solid white;
@@ -98,6 +98,13 @@
 .pull-right {
   right: 0;
   left: auto;
+}
+.badge {
+  padding: 0.55em 0.65em;
+  font-weight: 500;
+}
+.bx-mi{
+  font-size: 1.30rem!important;
 }
 footer.footer {
   margin-top: 18px;
@@ -132,7 +139,8 @@ footer.footer {
   z-index: 2;
   width: 230px;
   background: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
 }
 .sidebar:after {
   width: 100%;
@@ -321,7 +329,7 @@ footer.footer {
     0 7px 10px -5px rgba(255, 152, 0, 0.4);
 }
 .sidebar[data-color="danger"] li.active > a {
-  background-color: #950101;
+  background-color: var(--main-bg-color);
   box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%),
     0 7px 10px -5px rgb(149 1 1 / 12%);
 }

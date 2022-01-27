@@ -21,6 +21,12 @@ export const ROUTES: RouteInfo[] = [
     class: '',
   },
   {
+    path: 'suivi-all',
+    title: 'Suivi du process',
+    icon: '-loader',
+    class: '',
+  },
+  {
     path: 'clients',
     title: 'Les clients',
     icon: '-user',
@@ -65,5 +71,5 @@ export class DashboardEntryComponent implements OnInit {
     }
   };
   type_soc: any;
-  companies_types=['SARL','SAS','Autre']
+  companies_types = ['SARL', 'SAS', 'Autre'];
 }
